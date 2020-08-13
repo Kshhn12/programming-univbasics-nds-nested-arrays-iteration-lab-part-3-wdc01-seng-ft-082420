@@ -5,7 +5,7 @@ def join_nested_strings(src)
   array_of_strings = []
   while row_index < src.count do
     element_index = 0
-    while element_index < src[row_index].count do
+    while element_index < src[row_index].count && src[row_index] != nil do
       if src[row_index][element_index].is_a? String
           array_of_strings.push(src[row_index][element_index])
       element_index += 1
